@@ -190,17 +190,3 @@ for item in fields_updates_list:
         i = 0
     else:
         i = i + 1
-
-# send email notification detailing update success and content
-
-my_address = 'carterpython@gmail.com'
-password = 'citaeupaersxiely'
-to_address = 'carter.hughes@montgomeryparks.org'
-
-#initializing the server connection
-yag = yagmail.SMTP(user=my_address, password=password)
-
-#sending the email
-yag.send(to=to_address,
-        subject='Athletic Fields Data - Auto Update',
-        contents='Update to Athletic Fields Data was successful!\nNew Athletic Fields Labor Records: ' + str(labor_adds) + '\nNew Athletic Field Points Updates: ' + str(update_list_len))
