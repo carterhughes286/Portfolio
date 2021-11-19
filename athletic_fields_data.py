@@ -6,7 +6,7 @@ import datetime
 import numpy as np
 import yagmail
 
-gis = arcgis.gis.GIS('https://mcplanning.maps.arcgis.com', 'carter.hughes', 'SummerPass21')
+gis = arcgis.gis.GIS(profile='work')
 
 # Athletic Fields Data feature service
 feature_service = gis.content.get('79203c5b0ac34cffb304c912e284bc83')
